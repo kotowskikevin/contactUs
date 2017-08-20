@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <form action="contactUs.html" method="post">
+            <div>
+                <label id="firstNameLabel" for="firstName">First Name: </label>
+                <input id="FirstName" name="FirstName" type="text" />
+            </div>
+            <div>
+                <label id="lastNameLabel" for="lastName">Last Name: </label>
+                <input id="LastName" name="LastName" type="text" />
+            </div>
+            <div>
+                <label id="emailLabel" for="Email">Email: </label>
+                <input id="Email" name="Email" type="text" />
+            </div>
+            <div>
+                <label id="typeOfLicenseLabel" for="typeOfLicense">Type of License: </label>
+                <input id="TypeOfLicense" name="answer" value="Business" type="radio" checked/>Business
+                <input id="TypeOfLicense" name="answer" value="Personal" type="radio" />Personal
+            </div>
+            <div>
+                <label id="reasonLabel" for="Reason">Reason: </label>
+                <select id="Reason" name="Reason">
+                    <option value="selectAReason">Select a Reason</option>
+                    <option value="softwareSupport">Software Support</option>
+                    <option value="hardwareSupport">Hardware Support</option>
+                    <option value="informationRequest">Information Request</option>
+                </select>
+            </div>
+            <div>
+                <label id="additionalInformationLabel" for="additionalInformation">Additional Information: </label>
+                <textarea id="AdditionalInformation" name="AdditionalInformation" rows="5" cols="30"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="termsOfService" value="Yes"/>I have read the terms of service.
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+    </body>
+</html>
